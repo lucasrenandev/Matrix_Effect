@@ -12,7 +12,7 @@ canvas.height = window.innerHeight
 const screenWidth = canvas.width
 const screenHeight = canvas.height
 
-// VARIÁVEIS/CÓDIGOS PARA EFEITO MATRIX
+// VARIÁVEIS/CÓDIGOS PARA O EFEITO MATRIX
 const katakana = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン"
 const latim = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789"
@@ -27,7 +27,7 @@ for(let x = 0; x < columns; x ++) {
     drops[x] = 1
 }
 
-// FUNÇÃO PARA CRIAR O ESTILO DO EFEITO MATRIX
+// FUNÇÃO PARA CRIAR O ESTILO DO EFEITO(MATRIX)
 const contextMatrixStyle = () => {
     context.fillStyle = "rgba(0, 0, 0, 0.05)"
     context.fillRect(0, 0, screenWidth, screenHeight)
@@ -35,7 +35,7 @@ const contextMatrixStyle = () => {
     context.font = fontSize + "px sans-serif"   
 }
 
-// FUNÇÃO PARA CRIAR O EFEITO MATRIX
+// FUNÇÃO PARA CRIAR O EFEITO(MATRIX)
 const matrixEffect = () => {
     for(let i = 0; i < drops.length; i ++) {
         const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length))
