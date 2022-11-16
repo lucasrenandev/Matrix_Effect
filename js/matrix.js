@@ -48,5 +48,5 @@ const matrixEffect = () => {
     }
     contextMatrixStyle()
 }
-// CHAMANDO A FUNÇÃO EFEITO MATRIX NO DOCUMENTO
+// ATRIBUINDO A FUNÇÃO EFEITO MATRIX DENTRO DE UM INTERVALO
 setInterval(matrixEffect, 30)
