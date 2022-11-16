@@ -13,12 +13,19 @@ const numbers = "0123456789"
 
 const alphabet = katakana + latim + numbers
 
-const fontSize = 18
+const fontSize = 16
 const columns = Math.floor(screenWidth/fontSize)
 const drops = []
 
 for(let x = 0; x < columns; x ++) {
     drops[x] = 1
+}
+
+const contextMatrixStyle = () => {
+    context.fillStyle = "rgba(0, 0, 0, 0.05)"
+    context.fillRect(0, 0, screenWidth, screenHeight)
+    context.fillStyle = "#0f0"
+    context.font = fontSize + "px sans-serif"   
 }
 
 const matrixEffect = () => {
@@ -31,14 +38,6 @@ const matrixEffect = () => {
         }
         drops[i]++
     }
+    contextMatrixStyle()
 }
-
-const styleContext = () => {
-    context.fillStyle = "rgba(0, 0, 0, 0.05)"
-    context.fillRect(0, 0, screenWidth, screenHeight)
-    context.fillStyle = "#0f0"
-    context.font = fontSize + "px sans-serif"
-
-    matrixEffect()    
-}
-setInterval(styleContext, 30)
+setInterval(matrixEffect, 30)
