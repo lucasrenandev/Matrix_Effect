@@ -1,4 +1,4 @@
-// SELECIONANDO ELEMENTO CANVAS
+// SELECIONANDO ELEMENTO
 const canvas = document.getElementById("canvas")
 
 // DEFININDO CONTEXTO
@@ -12,7 +12,7 @@ canvas.height = window.innerHeight
 const screenWidth = canvas.width
 const screenHeight = canvas.height
 
-// VARIÁVEIS/CÓDIGOS PARA O EFEITO MATRIX
+// VARIÁVEIS/CÓDIGOS PARA O EFEITO(MATRIX)
 const katakana = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン"
 const latim = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const numbers = "0123456789"
@@ -48,5 +48,5 @@ const matrixEffect = () => {
     }
     contextMatrixStyle()
 }
-// ATRIBUINDO A FUNÇÃO EFEITO MATRIX DENTRO DE UM INTERVALO
+// ATRIBUINDO/DEFININDO A FUNÇÃO EFEITO MATRIX DENTRO DE UM INTERVALO
 setInterval(matrixEffect, 30)
